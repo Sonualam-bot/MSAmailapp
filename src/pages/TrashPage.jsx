@@ -15,7 +15,7 @@ export const TrashPage = () => {
 
                 <div className="trash_the_main" >
                     <h2 className="title" >Trash Mail</h2>
-                    {trashData.map((data) => {
+                    {trashData.length > 0 ? trashData.map((data) => {
                         const { mId, subject, content } = data;
                         return (
                             <li key={mId} className="trash_list" >
@@ -32,7 +32,7 @@ export const TrashPage = () => {
 
                             </li>
                         )
-                    })}
+                    }) : <h1 style={{ textAlign: "center" }} > Trash Box Empty </h1>}
                 </div>
             </div>
         </>

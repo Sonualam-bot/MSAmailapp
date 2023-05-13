@@ -17,7 +17,7 @@ export const SpamPage = () => {
                 <div className="spam_the_main"  >
                     <h2 className="title">Spam Mail</h2>
                     <ul className="spamList" >
-                        {spamData.map((data) => {
+                        {spamData.length > 0 ? spamData.map((data) => {
                             const { mId, subject, content } = data;
                             return (
                                 <li key={mId} className="emailList" >
@@ -36,7 +36,7 @@ export const SpamPage = () => {
 
                                 </li>
                             )
-                        })}
+                        }) : <h1 style={{ textAlign: "center" }} >Spam Box is Empty</h1>}
                     </ul>
                 </div>
             </div>
