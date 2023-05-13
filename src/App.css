@@ -182,7 +182,7 @@ padding: 10px;
 }
 
 
-@media screen and ( 400px  <= width <= 610px ) {
+@media screen and (min-width: 400px ) and (max-width: 610px ) {
   .main{
   width: 100%;
   margin: auto;
