@@ -182,7 +182,7 @@ padding: 10px;
 }
 
 
-@media screen and (min-width : 400px) and (max-width: 768px ) {
+@media screen and ( 400px  <= width <= 610px ) {
   .main{
   width: 100%;
   margin: auto;
@@ -207,8 +207,8 @@ padding: 10px;
   } */
 .nav{
   position: fixed;
-  width: 87.2%;
-  margin: auto;
+  width: 91.5%;
+  margin: 0;
   top: 10px;
  
 }
