@@ -1,0 +1,233 @@
+.App {
+  margin: 10px;
+}
+
+.title {
+  text-align: center;
+  font-size: xx-large;
+}
+
+.main{
+  display: grid;
+  /* width: 70%;
+  height: 70%; */
+  margin: auto;
+  border: 1px solid grey;
+  grid-template-columns: 1fr 9fr ;
+  /* justify-content: center; */
+  /* align-items: center; */
+  grid-gap: 0.5rem;
+  width: 80%;
+  
+  
+}
+
+.nav{
+  /* margin:  110px  30px ; */
+  /* grid-area: ; */
+  font-size: 1.5rem;
+  background-color:beige;
+  text-align: center;
+  margin: 10px;
+}
+.item1{
+  text-decoration: none;
+}
+
+.contents{
+  display: grid;
+  grid-template-rows: repeat(3, 150px);
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  
+}
+
+.emailList{
+  border: 1px solid grey;
+  margin: 0 10px 0 -30px;
+  padding: 10px;
+  list-style: none;
+  display: block;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.spamList{
+  margin:  10px auto;
+  width: 80%;
+  /* background-color: antiquewhite; */
+  /* border: 1px solid grey; */
+  padding: 10px 0 10px ;
+}
+
+.spam_the_main{
+  background-color: antiquewhite;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.individual_the_main{
+  background-color: antiquewhite;
+  width: 80%;
+  margin: 10px auto;
+padding: 10px;
+}
+.individual_list{
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.trash_the_main{
+  background-color: antiquewhite;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.trash_list{
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 10px;
+  list-style: none;
+}
+
+.aside{
+  background-color: antiquewhite;
+  margin: 10px;
+}
+
+.fieldset{
+  margin: 10px;
+}
+
+/* .btns_div>.star-btn{
+  grid-row: 1;
+} */
+
+
+.output_div{
+  display: grid;
+  grid-template-columns: 10fr 2fr;
+  grid-gap: 1rem;
+  /* width : 80% */
+  padding: 20px;
+}
+
+
+.btns_div{
+  /* font-size: 20px;/ */
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr ; */
+  /* grid-column-end: -1; */
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 1rem;
+  width: 5rem;
+  margin-left: 50px;
+  
+}
+
+.viewDetails{
+  font-size: 20px;
+  /* text-decoration: none; */
+  color: black;
+  text-shadow: darkgreen;
+}
+.btns{
+  border: none;
+  /* box-shadow: 0 0 10px 4px rgba(0,0,0,0.2); */
+  /* font-size: 20px; */
+  /* padding: 10px; */
+  color: black;
+  outline: none;
+  /* width: fit-content; */
+  background-color: antiquewhite;
+  /* background-color: black; */ 
+  cursor: pointer;
+  
+}
+
+/* .threeBtns{
+  grid-template-columns: 1fr 1fr;
+} */
+
+.star-btn{
+  border: none;
+  /* box-shadow: 0 0 10px 4px rgba(0,0,0,0.2); */
+  /* font-size: 15px; */
+  padding: 10px;
+  /* width: fit-content; */
+  background-color: antiquewhite;
+ font-size: 40px;
+ clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+ cursor: pointer;
+}
+
+.spam{
+  font-size: 40px;
+  background-color: antiquewhite;
+  color: green;
+}
+.delete{
+  font-size: 40px;
+  background-color: antiquewhite;
+  color: red;
+}
+.readUnread{
+  font-size: 40px;
+  background-color: antiquewhite;
+  color: orange;
+}
+
+
+@media screen and (min-width : 400px) and (max-width: 768px ) {
+  .main{
+    width: fit-content;
+    grid-gap: 0.1rem;
+
+
+  }
+  .aside{
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+   .item1 {
+    font-size: 1rem;
+  }
+  /* .App{
+    margin: 0;
+    padding: 0;
+  } */
+.nav{
+  position: fixed;
+  width: 80%;
+  margin: auto;
+
+ 
+}
+.contents{
+  display: flex;
+  margin-top: 0rem;
+  justify-content: space-evenly;
+  
+}
+
+  
+ 
+}
+
+/* @media screen and (min-width : 768px  ){
+  .main {
+    width: 80%;
+    margin: auto;
+  }
+} */
+
+@media screen and (max-width: 1250px ){
+  .nav{
+    padding: 10px;
+  }
+}
+
