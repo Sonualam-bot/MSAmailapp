@@ -184,14 +184,19 @@ padding: 10px;
 
 @media screen and (min-width : 400px) and (max-width: 768px ) {
   .main{
-    width: fit-content;
+  width: 100%;
+  margin: auto;
     grid-gap: 0.1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 20px;
+
+
 
 
   }
   .aside{
     margin-left: 0px;
-    margin-top: 10px;
   }
    .item1 {
     font-size: 1rem;
@@ -202,9 +207,9 @@ padding: 10px;
   } */
 .nav{
   position: fixed;
-  width: 80%;
+  width: 87.2%;
   margin: auto;
-
+  top: 10px;
  
 }
 .contents{
